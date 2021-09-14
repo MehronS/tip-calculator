@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  border-radius: 15px;
+}
+
+body {
+  background-color: hsl(173, 33%, 80%);
+  display: grid;
+  grid-template-columns: 1400px;
+  grid-template-rows: 1fr 2fr 1fr;
+  /* align-items: center; */
+  justify-items: center;
+  align-items: center;
+  row-gap: 70px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  color: hsl(183, 100%, 15%);
+}
+
+.bills::after {
+  content: "＄";
+  position: absolute;
+  bottom: 9px;
+  left: 8px;
+}
+
+.bill-input {
+  position: relative;
+}
+
+.people::before {
+  content: "🙍🏽‍♂️";
+  position: absolute;
+  bottom: 9px;
+  left: 8px;
+}
+
+.people-input {
+  position: relative;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  align-self: start;
+}
+.attribution:a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1400px;
+  grid-template-rows: 1fr 500px 1fr;
+  /* align-items: center; */
+  justify-items: center;
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: hsl(183, 58%, 25%);
+}
+
+.header-div {
+  align-self: end;
+}
+
+.calculator {
+  background-color: hsl(189, 41%, 97%);
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.calculations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.tip-buttons {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  justify-content: space-between;
+  gap: 10px;
+  width: 296px;
+}
+
+.tip {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+  padding: 11px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.custom {
+  background-color: hsl(173, 33%, 80%);
+  color: hsl(183, 100%, 15%);
+  border: 1px solid hsl(172, 52%, 34%);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.custom:hover,
+input:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 52%, 34%);
+}
+
+.input {
+  width: 300px;
+  height: 36px;
+  background-color: hsl(173, 33%, 80%);
+  text-align: end;
+  border: 1px solid hsl(172, 52%, 34%);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.output {
+  flex: 1;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.reset--btn {
+  width: 230px;
+  height: 35px;
+  align-self: center;
+  border: 1px solid hsl(172, 52%, 34%);
+  background-color: hsl(173, 33%, 80%);
+  border-radius: 5px;
+}
+
+.tip-amount,
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(172, 67%, 45%);
+  margin: 0 25px;
+}
+
+.tip-amount::after {
+  content: "/ person";
+  position: absolute;
+  font-size: 11px;
+  top: 73px;
+  left: 32px;
+}
+
+.total-amount::after {
+  content: "/ person";
+  position: absolute;
+  font-size: 11px;
+  bottom: 136px;
+  left: 32px;
+}
+
+.dollar {
+  font-size: 30px;
+}

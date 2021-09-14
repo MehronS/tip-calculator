@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+
+
+    <title>Tip Calculator App</title>
+
+    
+  </head>
+  <body>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
+    <!-- <div class="container"> -->
+      <div class="header-div"> 
+
+        <h1 class="header">Spli</h1>
+        <h2 class="header">tter</h2>
+      </div>
+
+    <article class="calculator">
+      <div class="calculations">
+        <div class="bill-input">
+
+          <h3 class="bills">Bill</h3>
+          <input class="input bill--input" type="number" value="0.00" onClick="this.select();"></input>
+        </div>
+        <div class="tips">
+
+          <h3>Select Tip %</h3>
+          <div class="tip-buttons">
+            <button class="tip" id="5">5%</button>
+            <button class="tip" id="10">10%</button>
+            <button class="tip" id="15">15%</button>
+            <button class="tip" id="25">25%</button>
+            <button class="tip" id="50">50%</button>
+            <input class="custom" placeholder="Custom" type="number" onClick="this.select();"></input>
+          </div>
+        </div>
+        <div class="people-input">
+
+          <h3 class="people">Number of People</h3>
+          <input class="input people--input" type="number" value="1" onClick="this.select();"></input>
+        </div>
+        </div>
+      <div class="output">
+        <div class="tip-amount">
+          <p>Tip Amount</p>
+          <p class="dollar tip--total">$0.00</p>
+        </div>
+        <div class="total-amount">
+          <p>Total</p>
+          <p class="dollar total">$0.00</p>
+        </div>
+        <button class="reset--btn">Reset</button>
+      </div>
+    </article>
+
+    <div class="attribution">
+       Coded by <a href="#">Mehron Latifi</a>.
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
