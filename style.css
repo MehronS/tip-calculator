@@ -9,12 +9,15 @@
 body {
   background-color: hsl(173, 33%, 80%);
   display: grid;
-  grid-template-columns: 1400px;
+  grid-template-columns: 800px;
   grid-template-rows: 1fr 2fr 1fr;
   /* align-items: center; */
   justify-items: center;
   align-items: center;
   row-gap: 70px;
+  position: fixed;
+  top: 0;
+  left: 30%;
 }
 
 h3 {
@@ -194,3 +197,14 @@ input::-webkit-outer-spin-button {
 .dollar {
   font-size: 30px;
 }
+
+/* @media (max-width: 375px) {
+  .calculator {
+    width: 375px;
+
+    display: flex;
+  }
+  body {
+    width: 600px;
+  }
+} ; */
